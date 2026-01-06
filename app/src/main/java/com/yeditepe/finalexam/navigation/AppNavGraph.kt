@@ -15,7 +15,13 @@ fun AppNavGraph() {
     ) {
 
         // TODO 1: Add composable for "tasks"
+         composable("task") {
+                        TaskListScreen(navController)
+                    }
 
         // TODO 2: Add composable for "taskDetail/{title}"
+          composable("detail") {
+                        TaskDetailScreen(viewModel)
+                    }
     }
 }
