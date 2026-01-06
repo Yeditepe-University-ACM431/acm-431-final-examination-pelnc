@@ -40,4 +40,8 @@ fun TaskItemScreen() {
 @Composable
 fun TaskItemPreview() {
     // TODO: Call TaskItemScreen
+    TaskListScreen(
+        navController = rememberNavController(),
+        viewModel = MovieViewModel()
+    )
 }
